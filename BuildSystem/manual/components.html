@@ -28,7 +28,7 @@
 							<h2>Object Placer</h2>
 						</header>
 						<p><span class="image left"><img src="images/objPlacer.png"></span>This component allows you to place one item on the ground.
-						  <br>Object Placer script is the core of the whole Asset Pack. It handles: player input, object placement, rotation, surface alignment, ghost creation and destruction.
+						  <br>Object Placer script is the core of the whole Asset Pack, it handles: player input, object placement, rotation, surface alignment, ghost creation and destruction.
 						  <br>This script can run alone if you set all the parameters in the Editor.
 						  <br><b>Skinned meshes are not supported!</b>				  
 						</p>
@@ -39,14 +39,14 @@
 							<tr><td>Ghost Material</td><td>The material that will be applied to object ghost.</td></tr>
 							<tr><td>Cam</td><td>The camera that will be used to perform the raycast. If empty Camera.main will be used.</td></tr>
 							<tr><td>Ground Layer</td><td>Layer where this script can place object.</td></tr>
-							<tr><td>Max Place Distance</td><td>Max distance from Cam where this script can place objects</td></tr>
+							<tr><td>Max Place Distance</td><td>Max distance from Cam where this script can place objects.</td></tr>
 							<tr><td>Place In Screen Center</td><td>Place object on center of the screen, if false the cursor position is used.</td></tr>
 							<tr><td>Face Me</td><td>Object will always face the camera. If false snap rotation will be used.</td></tr>
 							<tr><td>Snap Rotation Angle</td><td>Snap angle to add/subtract when a input key is pressed.</td></tr>
-							<tr><td>Toggle Key</td><td>Key used to toggle this script and also Object Selector if present.</td></tr>
+							<tr><td>Toggle Key</td><td>Key used to toggle this script.</td></tr>
 							<tr><td>Place Key</td><td>Key used to place an object.</td></tr>
-							<tr><td>Positive Rotate Key</td><td>Key used to rotate forward the object by Snap Rotation Angle</td></tr>
-							<tr><td>Negative Rotate Key</td><td>Key used to rotate backward the object by Snap Rotation Angle</td></tr>
+							<tr><td>Positive Rotate Key</td><td>Key used to rotate forward the object by Snap Rotation Angle.</td></tr>
+							<tr><td>Negative Rotate Key</td><td>Key used to rotate backward the object by Snap Rotation Angle.</td></tr>
 							</tbody>
 						</table>
 						</div>
@@ -57,13 +57,15 @@
 							<h2>Object Selector</h2>
 						</header>
 						<p><span class="image left"><img src="images/objSelector.png"></span>This component handles the object selection UI generation, input and toggles. 
+						This script is important because it is the intermediary between UI and Object Placer. 
+						I made this choise to grant you an easier UI custumization because you don't have to care about how items are handled by my scripts.
 						By default this script will set Object To Place (Object Placer) to the first element in Build Object List.
 						<br><b>NOTE:</b>The toggle key is the same as Object Placer.
 						<table class="alt">
 							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
 							<tbody>
-							<tr><td>Build Object List</td><td>Build Item Container that contains a list of spawnable items.</td></tr>
-							<tr><td>Builder Menu Prefab</td><td>Item selection UI prefab that will be spawned and used to display Build Object List items.</td></tr>
+							<tr><td>Build Object List</td><td>Build Item Container object that contains the list of spawnable items.</td></tr>
+							<tr><td>Builder Menu Prefab</td><td>Selection UI prefab that will be spawned and used to display Build Object List items.</td></tr>
 							<tr><td>Collapse Menu Key</td><td>Key used to collapse Builder Menu Prefab.</td></tr>
 							</tbody>
 						</table>
@@ -75,13 +77,13 @@
 							<h2>Builder UI</h2>
 						</header>
 						<p><span class="image left"><img src="images/buildUI.png"></span>This component defines the object selection UI behaviour and then tells Object Selector which object has beed selected.
-						<br><b>Note:</b> You can create your own selection UI. To create it just implement IItemSelectionUI interface in your script.</p>
+						<br><b>Note:</b> You can easly create your own selection UI. To create it just implement IItemSelectionUI interface in your script and replace the prefab in Object Selector.</p>
 						<table class="alt">
 							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
 							<tbody>
 							<tr><td>Button Parent</td><td>The transform that will be used as parent for menu entries.</td></tr>
-							<tr><td>Obj Prefab</td><td>Menu entry prefab of type Builder Object UI.</td></tr>
-							<tr><td>Collapse Menu Button Text</td><td>Reference to the Collapse text on UI Button.</td></tr>
+							<tr><td>Obj Prefab</td><td>Entry prefab of type Builder Object UI.</td></tr>
+							<tr><td>Collapse Menu Button Text</td><td>Reference to the Collapse text in the corresponding UI Button.</td></tr>
 							<tr><td>Collapse After Select</td><td>If true the menu will be collapsed after an entry is selected.</td></tr>
 							</tbody>
 						</table>
@@ -92,14 +94,14 @@
 						<header>
 							<h2>Builder Object UI</h2>
 						</header>
-						<p><span class="image left"><img src="images/buildUIItem.png"></span>A Builder UI Menu entry spawned at runtime. This component set up the entry with the item provided at spawn.</p>
+						<p><span class="image left"><img src="images/buildUIItem.png"></span>A Builder UI Menu entry spawned at runtime. This component sets up the entry with the item provided at spawn.</p>
 						<table class="alt">
 							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
 							<tbody>
 							<tr><td>Select Color</td><td>Border color of the entry when is selected.</td></tr>
 							<tr><td>Not Select Color</td><td>Border color of the entry when is not selected.</td></tr>
-							<tr><td>Item Name</td><td>Reference to the UI text that display the item name.</td></tr>
-							<tr><td>Item Image</td><td>Reference to the UI image that display the item preview.</td></tr>
+							<tr><td>Item Name</td><td>Reference to the UI text that displays the item name.</td></tr>
+							<tr><td>Item Image</td><td>Reference to the UI image that displays the item preview.</td></tr>
 							<tr><td>Border Img</td><td>Reference to the UI image used as border.</td></tr>
 							</tbody>
 						</table>
@@ -109,8 +111,8 @@
 						<header>
 							<h2>Build Item</h2>
 						</header>
-						<p><span class="image left"><img src="images/buildItem.png"></span>This script represents and item that can be placed in the scene at runtime. This object can only be created in the editor 
-						as stand alone object and <b>can not</b> be changed at runtime!</p>
+						<p><span class="image left"><img src="images/buildItem.png"></span>This script represents an item that can be placed in the scene at runtime. An object of this type can only be created in the editor 
+						as a stand alone object and <b>can not</b> be changed at runtime!</p>
 						<table class="alt">
 							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
 							<tbody>
@@ -132,7 +134,7 @@
 						<table class="alt">
 							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
 							<tbody>
-							<tr><td>Build Item List</td><td>List of Build Items.</td></tr>
+							<tr><td>Build Item List</td><td>List of Build Items to use.</td></tr>
 							</tbody>
 						</table>
 						</div>
@@ -143,7 +145,7 @@
 							<h2>Object Preview Generator</h2>
 						</header>
 						<p><span class="image left"><img src="images/assetPreview.png"></span>Editor tool that helps you to create prefab previews.
-						 It's better to create your own previews because the tool generates only low resolution images.</p>
+						 I reccomend you to create your own previews because this tool generates only low resolution images based on Unity asset previews.</p>
 						<table class="alt">
 							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
 							<tbody>
