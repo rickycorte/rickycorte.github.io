@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+
+	Note: Only needed for demo purposes. Delete for production sites.
+-->
+<html>
+
+<head>
+	<title>Component Reference</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="../../assets/css/main.css" />
+</head>
+
+<body>
+
+	<!-- Wrapper -->
+	<div class="wrapper style1 align-center">
+		<div class="inner">
+			<h1>Component Reference</h1>
+			<div class="index align-left">
+				<section>
+					<div class="content">
+						<header>
+							<h2>Object Placer</h2>
+						</header>
+						<p><span class="image left"><img src="images/objPlacer.png"></span>This component allows you to place one item on the ground.
+						  <br>Object Placer script is the core of the whole Asset Pack. It handles: player input, object placement, rotation, surface alignment, ghost creation and destruction.
+						  <br>This script can run alone if you set all the parameters in the Editor.
+						  <br><b>Skinned meshes are not supported!</b>				  
+						</p>
+						<table class="alt">
+							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
+							<tbody>
+							<tr><td>Object To Place</td><td>Prefab to place on the ground. (Leave empty is you are using Object Selector)</td></tr>
+							<tr><td>Ghost Material</td><td>The material that will be applied to object ghost.</td></tr>
+							<tr><td>Cam</td><td>The camera that will be used to perform the raycast. If empty Camera.main will be used.</td></tr>
+							<tr><td>Ground Layer</td><td>Layer where this script can place object.</td></tr>
+							<tr><td>Max Place Distance</td><td>Max distance from Cam where this script can place objects</td></tr>
+							<tr><td>Place In Screen Center</td><td>Place object on center of the screen, if false the cursor position is used.</td></tr>
+							<tr><td>Face Me</td><td>Object will always face the camera. If false snap rotation will be used.</td></tr>
+							<tr><td>Snap Rotation Angle</td><td>Snap angle to add/subtract when a input key is pressed.</td></tr>
+							<tr><td>Toggle Key</td><td>Key used to toggle this script and also Object Selector if present.</td></tr>
+							<tr><td>Place Key</td><td>Key used to place an object.</td></tr>
+							<tr><td>Positive Rotate Key</td><td>Key used to rotate forward the object by Snap Rotation Angle</td></tr>
+							<tr><td>Negative Rotate Key</td><td>Key used to rotate backward the object by Snap Rotation Angle</td></tr>
+							</tbody>
+						</table>
+						</div>
+				</section>
+				<section>
+					<div class="content">
+						<header>
+							<h2>Object Selector</h2>
+						</header>
+						<p><span class="image left"><img src="images/objSelector.png"></span>This component handles the object selection UI generation, input and toggles. 
+						By default this script will set Object To Place (Object Placer) to the first element in Build Object List.
+						<br><b>NOTE:</b>The toggle key is the same as Object Placer.
+						<table class="alt">
+							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
+							<tbody>
+							<tr><td>Build Object List</td><td>Build Item Container that contains a list of spawnable items.</td></tr>
+							<tr><td>Builder Menu Prefab</td><td>Item selection UI prefab that will be spawned and used to display Build Object List items.</td></tr>
+							<tr><td>Collapse Menu Key</td><td>Key used to collapse Builder Menu Prefab.</td></tr>
+							</tbody>
+						</table>
+						</div>
+				</section>
+				<section>
+					<div class="content">
+						<header>
+							<h2>Builder UI</h2>
+						</header>
+						<p><span class="image left"><img src="images/buildUI.png"></span>This component defines the object selection UI behaviour and then tells Object Selector which object has beed selected.
+						<br><b>Note:</b> You can create your own selection UI. To create it just implement IItemSelectionUI interface in your script.</p>
+						<table class="alt">
+							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
+							<tbody>
+							<tr><td>Button Parent</td><td>The transform that will be used as parent for menu entries.</td></tr>
+							<tr><td>Obj Prefab</td><td>Menu entry prefab of type Builder Object UI.</td></tr>
+							<tr><td>Collapse Menu Button Text</td><td>Reference to the Collapse text on UI Button.</td></tr>
+							<tr><td>Collapse After Select</td><td>If true the menu will be collapsed after an entry is selected.</td></tr>
+							</tbody>
+						</table>
+						</div>
+				</section>
+				<section>
+					<div class="content">
+						<header>
+							<h2>Builder Object UI</h2>
+						</header>
+						<p><span class="image left"><img src="images/buildUIItem.png"></span>A Builder UI Menu entry spawned at runtime. This component set up the entry with the item provided at spawn.</p>
+						<table class="alt">
+							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
+							<tbody>
+							<tr><td>Select Color</td><td>Border color of the entry when is selected.</td></tr>
+							<tr><td>Not Select Color</td><td>Border color of the entry when is not selected.</td></tr>
+							<tr><td>Item Name</td><td>Reference to the UI text that display the item name.</td></tr>
+							<tr><td>Item Image</td><td>Reference to the UI image that display the item preview.</td></tr>
+							<tr><td>Border Img</td><td>Reference to the UI image used as border.</td></tr>
+							</tbody>
+						</table>
+				</section>
+				<section>
+					<div class="content">
+						<header>
+							<h2>Build Item</h2>
+						</header>
+						<p><span class="image left"><img src="images/buildItem.png"></span>This script represents and item that can be placed in the scene at runtime. This object can only be created in the editor 
+						as stand alone object and <b>can not</b> be changed at runtime!</p>
+						<table class="alt">
+							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
+							<tbody>
+							<tr><td>Display Name</td><td>Name that will be showed in the object selection UI. </td></tr>
+							<tr><td>Prefab To Spawn</td><td>Prefab that will be spawend in the scene.</td></tr>
+							<tr><td>Sprite To Show In UI</td><td>Item preview that will be shown in object selection UI.</td></tr>
+							<tr><td>isComplexMesh</td><td>Enable complex mesh ghost creation. Check this only if your mesh has multiple mesh renderes.</td></tr>
+							</tbody>
+						</table>
+						</div>
+				</section>
+				<section>
+					<div class="content">
+						<header>
+							<h2>Build Item Container</h2>
+						</header>
+						<p><span class="image left"><img src="images/itemList.png"></span>List of Build Items that will be used to generate object selection UI enitres. 
+						This items can only be created in the editor as stand alone objects and <b>can not</b> be changed at runtime!</p>
+						<table class="alt">
+							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
+							<tbody>
+							<tr><td>Build Item List</td><td>List of Build Items.</td></tr>
+							</tbody>
+						</table>
+						</div>
+				</section>
+				<section>
+					<div class="content">
+						<header>
+							<h2>Object Preview Generator</h2>
+						</header>
+						<p><span class="image left"><img src="images/assetPreview.png"></span>Editor tool that helps you to create prefab previews.
+						 It's better to create your own previews because the tool generates only low resolution images.</p>
+						<table class="alt">
+							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
+							<tbody>
+							<tr><td>Object</td><td>Prefab used to create the preview.</td></tr>
+							</tbody>
+						</table>
+						</div>
+				</section>
+		</div>
+				<a href="index.html" class="button special align-center">Back</a>
+				<a href="guide.html" class="button special align-center">Guide</a>
+		</div>
+		</div>
+
+
+		<!-- Scripts -->
+		<script src="../../assets/js/jquery.min.js"></script>
+		<script src="../../assets/js/jquery.scrollex.min.js"></script>
+		<script src="../../assets/js/jquery.scrolly.min.js"></script>
+		<script src="../../assets/js/skel.min.js"></script>
+		<script src="../../assets/js/util.js"></script>
+		<script src="../../assets/js/main.js"></script>
+
+</body>
+
+</html>
