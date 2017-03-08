@@ -9,7 +9,7 @@
 <html>
 
 <head>
-	<title>Component Reference</title>
+	<title>Getting Started</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="../../assets/css/main.css" />
@@ -20,16 +20,30 @@
 	<!-- Wrapper -->
 	<div class="wrapper style1 align-center">
 		<div class="inner">
-			<h1>Step-by-Step Guide</h1>
-			<h3>Short desc</h3>
+			<h1>Getting Started</h1>
+			<h3>In this guide you will learn how to set up Build System in your scene.</h3>
 			<div class="index align-left">
+				<section>
+						<header>
+							<h3>Requirements:</h3>
+						</header>
+					<div class="content">
+						<ul>
+							<li>Leatest Unity 5 version installed</li>
+							<li>Know what components are</li>
+							<li>Create prefabs and add components to them</li>
+							<li>Add and set physic layer</li>
+						</ul>	
+						</div>
+				</section>
 				<section>
 						<header>
 							<h3>Step # 1</h3>
 						</header>
 					<div class="content">
-						<span class="image fit"><img src="images/buildsystem.jpg"></span>
-						<p>Description			  
+						<p>The first thing you have to do is to create a new scene or use an existing one. Create/Prepare also some prefabs that we will use later in Build Items.
+							 I'll not show how create them because that's beyond the scope of this guide. 
+							 <br>Before we start note that lines that begins with [S] can be skipped if you already have the base asset and you don't want to create a new one.					   		  
 						</p>
 						</div>
 				</section>
@@ -38,16 +52,109 @@
 							<h3>Step # 2</h3>
 						</header>
 					<div class="content">
-						<span class="image fit"><img src="images/buildsystem.jpg"></span>
-						<p>Description			  
+						<p>Now that you have created your scene and prefabs we can create our player or apply Build System components to it.
+						<br>Ok lets start:		  
 						</p>
+						<ul>
+							<li>[S] Create a capsule</li>
+							<li>[S] Set the Main Camera as a child of the object</li>
+							<li>[S] Add Player Controller script to it. Wow, in like 2 seconds you have just created a player controller that can move around the map</li>
+							<li>Add Object Placer component</li>
+						</ul>
+						<span class="image fit"><img src="images/step2.png"></span>	
+						<p>Do you want to know a cool thing? We almost created a player controller that can place objects in the scene!</p>
+						</div>
+				</section>
+				<section>
+						<header>
+							<h3>Step # 3</h3>
+						</header>
+					<div class="content">
+						<p>Ok, we created the player controller but it still not work as expected. We have to do some simple things.	  
+						</p>
+						<ul>
+							<li>[S] Set a prefab in Object To Place field if you don't need the Selection UI</li>
+							<li>Set Ghost material to one of your materials or use the one that comes with this Asset Pack</li>
+							<li>[S] Create a new physic layer</li>
+							<li>[S] Apply it to all the surfaces where you want to place objects</li>
+							<li>Set the value of Ground Layer field with physic layers where you want to place objects. Note: the placement is done on <b>every</b> surface that is in one of the specified layers.</li>
+						</ul>
+						<span class="image fit"><img src="images/step3.png"></span>	
+						<p>Now you are ready to test it! Hit play and have fun.</p>
+						</div>
+				</section>
+				<section>
+						<header>
+							<h3>Step # 4</h3>
+						</header>
+					<div class="content">
+						<p>Are you ready to continue and create object selection UI? Ok let's go on:	  
+						</p>
+						<ul>
+							<li>Create some Build Items : Right Click in Asset Explorer > Building > Item</li>
+							<li>Create a Build Item Container : Right Click in Asset Explorer > Building > Container</li>
+						</ul>
+						<span class="image fit"><img src="images/step4.png"></span>	
+						</div>
+				</section>
+				<section>
+						<header>
+							<h3>Step # 5</h3>
+						</header>
+					<div class="content">
+						<p>When you are ready we can start to fill Build Items:
+						   <br>Set all the fields in the Item and if your object has multiple mesh renderes check isComplexMesh.	  
+						</p>
+						<span class="image fit"><img src="images/step5.png"></span>	
+						<p>At this point you will want to ask me: "How can I create a object preview? 
+							"That's easy, in the top bar, under Build System, click Create Object Preview and follow the instruction of the window that will open.</p>
+						</div>
+				</section>
+				<section>
+						<header>
+							<h3>Step # 6</h3>
+						</header>
+					<div class="content">
+						<p>Now that you have finished filling items fields, it's time to add them in the Container. Create new entries with the '+' sign and drag your Build Items. 
+							When you finish you will have something like this:	  
+						</p>
+						<span class="image fit"><img src="images/step6.png"></span>		
+						<p>Note: to remove and item you can select it and the press '-' of you can just press the 'x' button.
+						</p>
+						</div>
+				</section>
+				<section>
+						<header>
+							<h3>Step # 7</h3>
+						</header>
+					<div class="content">
+						<p>I swear the end of this guide is near. Let's get back to our player controller:
+						<ul>
+							<li>Add Object Selector componet</li>
+							<li>Drag and drop the Container that we created before in Build Object List</li>
+							<li>[S] Create your own selector UI prefab by implementing IItemSelectionUI</li>
+							<li>Drag and drop your UI prefab in Builder Menu Prafab field</li>
+							<li>[S] Set a key for menu collapse in the last field</li>
+							<li>Create an Event System in the scene. Right Click in Hierarchy view > UI > Event System</li>
+						</ul>	  
+						<span class="image fit"><img src="images/step7.png"></span>		
+						</div>
+				</section>
+				<section>
+						<header>
+							<h3>Step # 8</h3>
+						</header>
+					<div class="content">
+						<p>Enjoy! You have added Build System to your game!</p>
+						<span class="image fit"><img src="images/step8.png"></span>	
 						</div>
 				</section>
 
 		</div>
+		<hr>
 				<a href="index.html" class="button special align-center">Back</a>
 				<a href="components.html" class="button special align-center">Component Reference</a>
-				<a href="../doc/index.html" class="button special align-center">API Reference</a>
+				<a href="../docs/index.html" class="button special align-center">API Reference</a>
 		</div>
 		</div>
 
