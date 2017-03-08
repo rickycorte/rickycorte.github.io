@@ -21,7 +21,7 @@
 	<div class="wrapper style1 align-center">
 		<div class="inner">
 			<h1>Getting Started</h1>
-			<h3>In this guide you will learn how to set up Build System in your scene.</h3>
+			<h3>In this guide you will learn how to set up Build System in your game.</h3>
 			<div class="index align-left">
 				<section>
 						<header>
@@ -29,10 +29,9 @@
 						</header>
 					<div class="content">
 						<ul>
-							<li>Leatest Unity 5 version installed</li>
 							<li>Know what components are</li>
 							<li>Create prefabs and add components to them</li>
-							<li>Add and set physic layer</li>
+							<li>Add and set physics layer</li>
 						</ul>	
 						</div>
 				</section>
@@ -43,7 +42,7 @@
 					<div class="content">
 						<p>The first thing you have to do is to create a new scene or use an existing one. Create/Prepare also some prefabs that we will use later in Build Items.
 							 I'll not show how create them because that's beyond the scope of this guide. 
-							 <br>Before we start note that lines that begins with [S] can be skipped if you already have the base asset and you don't want to create a new one.					   		  
+							 <br>Before we start, note that lines beginning with [S] can be skipped if you already have the base asset and you don't want to create a new one.					   		  
 						</p>
 						</div>
 				</section>
@@ -53,16 +52,16 @@
 						</header>
 					<div class="content">
 						<p>Now that you have created your scene and prefabs we can create our player or apply Build System components to it.
-						<br>Ok lets start:		  
+						<br>Let's start:		  
 						</p>
 						<ul>
 							<li>[S] Create a capsule</li>
 							<li>[S] Set the Main Camera as a child of the object</li>
-							<li>[S] Add Player Controller script to it. Wow, in like 2 seconds you have just created a player controller that can move around the map</li>
+							<li>[S] Add Player Controller script to it</li>
 							<li>Add Object Placer component</li>
 						</ul>
 						<span class="image fit"><img src="images/step2.png"></span>	
-						<p>Do you want to know a cool thing? We almost created a player controller that can place objects in the scene!</p>
+						<p>Do you want to know a cool thing? In like 2 seconds we almost created a player controller that can move around the map and can place objects in the scene!</p>
 						</div>
 				</section>
 				<section>
@@ -70,17 +69,17 @@
 							<h3>Step # 3</h3>
 						</header>
 					<div class="content">
-						<p>Ok, we created the player controller but it still not work as expected. We have to do some simple things.	  
+						<p>We have created the player controller but it still not work as expected because it can not place things. To do that we have to do some simple things:	  
 						</p>
 						<ul>
-							<li>[S] Set a prefab in Object To Place field if you don't need the Selection UI</li>
+							<li>[S] Set a prefab in Object To Place field if you don't need the Selection UI or you want to test things</li>
 							<li>Set Ghost material to one of your materials or use the one that comes with this Asset Pack</li>
-							<li>[S] Create a new physic layer</li>
+							<li>[S] Create a new physics layer</li>
 							<li>[S] Apply it to all the surfaces where you want to place objects</li>
-							<li>Set the value of Ground Layer field with physic layers where you want to place objects. Note: the placement is done on <b>every</b> surface that is in one of the specified layers.</li>
+							<li>Set the value of Ground Layer field with physics layers where you want to place objects. Note: the placement is done on <b>every</b> surface that is in one of the specified layers.</li>
 						</ul>
 						<span class="image fit"><img src="images/step3.png"></span>	
-						<p>Now you are ready to test it! Hit play and have fun.</p>
+						<p>Three more seconds are gone and now you are ready to test it! Hit play and have fun.</p>
 						</div>
 				</section>
 				<section>
@@ -88,7 +87,7 @@
 							<h3>Step # 4</h3>
 						</header>
 					<div class="content">
-						<p>Are you ready to continue and create object selection UI? Ok let's go on:	  
+						<p>Take a break, I know we did a huge work before, come back when you are ready to create object selection UI. Ready? Ok let's go on:	  
 						</p>
 						<ul>
 							<li>Create some Build Items : Right Click in Asset Explorer > Building > Item</li>
@@ -102,12 +101,12 @@
 							<h3>Step # 5</h3>
 						</header>
 					<div class="content">
-						<p>When you are ready we can start to fill Build Items:
-						   <br>Set all the fields in the Item and if your object has multiple mesh renderes check isComplexMesh.	  
+						<p>When you you have created enouth Build Items you can start to fill their fields.
+						   <br>Set all the fields of the Items with your prefabs and other data, if your object has multiple mesh renderes check isComplexMesh.	  
 						</p>
 						<span class="image fit"><img src="images/step5.png"></span>	
-						<p>At this point you will want to ask me: "How can I create a object preview? 
-							"That's easy, in the top bar, under Build System, click Create Object Preview and follow the instruction of the window that will open.</p>
+						<p>At this point I know you want to ask: "How do I create a object preview?"
+							 That's easy, in the top bar, under Build System, click Create Object Preview and follow the instruction of the window that will open.</p>
 						</div>
 				</section>
 				<section>
@@ -115,8 +114,8 @@
 							<h3>Step # 6</h3>
 						</header>
 					<div class="content">
-						<p>Now that you have finished filling items fields, it's time to add them in the Container. Create new entries with the '+' sign and drag your Build Items. 
-							When you finish you will have something like this:	  
+						<p>Now that you have finished filling all the items fields, it's time to add them in the Container. Create new entries with the '+' sign and drag your Build Items. 
+							You should end up with something like this (obviusly the names will be different):	  
 						</p>
 						<span class="image fit"><img src="images/step6.png"></span>		
 						<p>Note: to remove and item you can select it and the press '-' of you can just press the 'x' button.
@@ -128,14 +127,15 @@
 							<h3>Step # 7</h3>
 						</header>
 					<div class="content">
-						<p>I swear the end of this guide is near. Let's get back to our player controller:
+						<p>I know you are really tired, but I swear the end of this guide is near. 
+							<br>Let's get back to our player controller:
 						<ul>
-							<li>Add Object Selector componet</li>
+							<li>Add Object Selector component</li>
 							<li>Drag and drop the Container that we created before in Build Object List</li>
 							<li>[S] Create your own selector UI prefab by implementing IItemSelectionUI</li>
 							<li>Drag and drop your UI prefab in Builder Menu Prafab field</li>
 							<li>[S] Set a key for menu collapse in the last field</li>
-							<li>Create an Event System in the scene. Right Click in Hierarchy view > UI > Event System</li>
+							<li>Create an Event System in the scene. Right Click in Hierarchy View > UI > Event System</li>
 						</ul>	  
 						<span class="image fit"><img src="images/step7.png"></span>		
 						</div>
