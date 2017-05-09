@@ -72,8 +72,7 @@
 						<p>We have created the player controller but it still not work as expected because it can not place things. To do that we have to do some simple things:	  
 						</p>
 						<ul>
-							<li>[S] Set a prefab in Object To Place field if you don't need the Selection UI or you want to test things</li>
-							<li>Set Ghost material to one of your materials or use the one that comes with this Asset Pack</li>
+							<li>[S] Set a Build Item in Object To Place field if you don't need the Selection UI or you want to test things</li>
 							<li>[S] Create a new physics layer</li>
 							<li>[S] Apply it to all the surfaces where you want to place objects</li>
 							<li>Set the value of Ground Layer field with physics layers where you want to place objects. Note: the placement is done on <b>every</b> surface that is in one of the specified layers.</li>
@@ -102,11 +101,11 @@
 						</header>
 					<div class="content">
 						<p>When you you have created enouth Build Items you can start to fill their fields.
-						   <br>Set all the fields of the Items with your prefabs and other data, if your object has multiple mesh renderes check isComplexMesh.	  
+						   <br>Set all the fields of the Items with your prefabs and other data, the scripts will help you creating the object by setting suggested values in fields. 
 						</p>
 						<span class="image fit"><img src="images/step5.png"></span>	
-						<p>At this point I know you want to ask: "How do I create a object preview?"
-							 That's easy, in the top bar, under Build System, click Create Object Preview and follow the instruction of the window that will open.</p>
+						<p>At this point I know you want to ask: "How did the script create a object preview?"
+							 That's easy, in the top bar, under Build System, click Create Object Preview and follow the instruction of the window that will open. The script and the window share the same code to create previews.</p>
 						</div>
 				</section>
 				<section>
@@ -118,7 +117,8 @@
 							You should end up with something like this (obviusly the names will be different):	  
 						</p>
 						<span class="image fit"><img src="images/step6.png"></span>		
-						<p>Note: to remove and item you can select it and the press '-' of you can just press the 'x' button.
+						<p>To remove and item you can select it and the press '-' of you can just press the 'x' button.</p>
+						<p>	Please <b>do not</b> remove prefabs in cache folder, they are the ghosts of your objects and they are needed to use Build System correctly. If you accidentally delete them, you can generate new ones pressing "Regenerate all ghosts" in Item Container Editor.						
 						</p>
 						</div>
 				</section>

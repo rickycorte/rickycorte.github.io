@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['buildsystem',['BuildSystem',['../namespaceBuildSystem.html',1,'']]]
+  ['buildsystem',['BuildSystem',['../namespace_build_system.html',1,'']]]
 ];

@@ -30,19 +30,19 @@
 						<p><span class="image left"><img src="images/objPlacer.png"></span>This component allows you to place one item on the ground.
 						  <br>Object Placer script is the core of the whole Asset Pack, it handles: player input, object placement, rotation, surface alignment, ghost creation and destruction.
 						  <br>This script can run alone if you set all the parameters in the Editor.
-						  <br><b>Skinned meshes are not supported!</b>				  
+						  <br><b>Skinned meshes are now supported!</b>				  
 						</p>
 						<table class="alt">
 							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
 							<tbody>
-							<tr><td>Object To Place</td><td>Prefab to place on the ground. (Leave empty is you are using Object Selector)</td></tr>
-							<tr><td>Ghost Material</td><td>The material that will be applied to object ghost.</td></tr>
+							<tr><td>Object To Place</td><td>Build Item to place on the ground. (Leave empty is you are using Object Selector)</td></tr>
 							<tr><td>Cam</td><td>The camera that will be used to perform the raycast. If empty Camera.main will be used.</td></tr>
 							<tr><td>Ground Layer</td><td>Layer where this script can place object.</td></tr>
 							<tr><td>Max Place Distance</td><td>Max distance from Cam where this script can place objects.</td></tr>
 							<tr><td>Place In Screen Center</td><td>Place object on center of the screen, if false the cursor position is used.</td></tr>
 							<tr><td>Face Me</td><td>Object will always face the camera. If false snap rotation will be used.</td></tr>
 							<tr><td>Snap Rotation Angle</td><td>Snap angle to add/subtract when a input key is pressed.</td></tr>
+							<tr><td>Reset Rotation After Place</td><td>Reset the rotation after an object has been placed, works only with snap rotation</td></tr>
 							<tr><td>Toggle Key</td><td>Key used to toggle this script.</td></tr>
 							<tr><td>Place Key</td><td>Key used to place an object.</td></tr>
 							<tr><td>Positive Rotate Key</td><td>Key used to rotate forward the object by Snap Rotation Angle.</td></tr>
@@ -113,13 +113,14 @@
 						</header>
 						<p><span class="image left"><img src="images/buildItem.png"></span>This script represents an item that can be placed in the scene at runtime. An object of this type can only be created in the editor 
 						as a stand alone object and <b>can not</b> be changed at runtime!</p>
+						<p>This script will also halp you by fillng all empty fields if you first assign a prefab</p>
 						<table class="alt">
 							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
-							<tbody>
-							<tr><td>Display Name</td><td>Name that will be showed in the object selection UI. </td></tr>
+							<tbody>						
 							<tr><td>Prefab To Spawn</td><td>Prefab that will be spawend in the scene.</td></tr>
+							<tr><td>Display Name</td><td>Name that will be showed in the object selection UI. </td></tr>
 							<tr><td>Sprite To Show In UI</td><td>Item preview that will be shown in object selection UI.</td></tr>
-							<tr><td>isComplexMesh</td><td>Enable complex mesh ghost creation. Check this only if your mesh has multiple mesh renderes.</td></tr>
+							<tr><td>Ghost material</td><td>Material used to create ghost.</td></tr>
 							</tbody>
 						</table>
 						</div>
@@ -135,6 +136,21 @@
 							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
 							<tbody>
 							<tr><td>Build Item List</td><td>List of Build Items to use.</td></tr>
+							</tbody>
+						</table>
+						</div>
+				</section>
+				<section>
+					<div class="content">
+						<header>
+							<h2>Material Assigner</h2>
+						</header>
+						<p><span class="image left"><img src="images/matSet.png"></span>Editor tool that helps you set ghost material to object that you have null material or to all build object in your project</p>
+						<table class="alt">
+							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
+							<tbody>
+							<tr><td>Ghost material</td><td>Material to set in Build Items.</td></tr>
+							<tr><td>Ovveride current ghost material</td><td>Should this script set the new material only to Build Items with null ghost material or to every object.</td></tr>
 							</tbody>
 						</table>
 						</div>
