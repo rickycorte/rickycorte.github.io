@@ -12,7 +12,7 @@
 	<title>Component Reference</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="../../assets/css/main.css" />
+	<link rel="stylesheet" href="assets/css/main.css" />
 </head>
 
 <body>
@@ -35,22 +35,52 @@
 						<table class="alt">
 							<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
 							<tbody>
-							<tr><td>Object To Place</td><td>Build Item to place on the ground. (Leave empty is you are using Object Selector)</td></tr>
 							<tr><td>Cam</td><td>The camera that will be used to perform the raycast. If empty Camera.main will be used.</td></tr>
+							<tr><td>Object To Place</td><td>Build Item to place on the ground. (Leave empty is you are using Object Selector)</td></tr>
 							<tr><td>Ground Layer</td><td>Layer where this script can place object.</td></tr>
 							<tr><td>Max Place Distance</td><td>Max distance from Cam where this script can place objects.</td></tr>
 							<tr><td>Place In Screen Center</td><td>Place object on center of the screen, if false the cursor position is used.</td></tr>
 							<tr><td>Face Me</td><td>Object will always face the camera. If false snap rotation will be used.</td></tr>
 							<tr><td>Snap Rotation Angle</td><td>Snap angle to add/subtract when a input key is pressed.</td></tr>
-							<tr><td>Reset Rotation After Place</td><td>Reset the rotation after an object has been placed, works only with snap rotation</td></tr>
+							<tr><td>Reset Rotation After Place</td><td>Reset the rotation after an object has been placed, works only with snap rotation.</td></tr>
+							<tr><td>Use Continuous Rotation</td><td>Enable Object continuous rotation while pressing rotation key.</td></tr>
+							<tr><td>Continuous Rotation Speed</td><td>Speed used to rotate object in continuous rotation mode.</td></tr>
 							<tr><td>Toggle Key</td><td>Key used to toggle this script.</td></tr>
 							<tr><td>Place Key</td><td>Key used to place an object.</td></tr>
 							<tr><td>Positive Rotate Key</td><td>Key used to rotate forward the object by Snap Rotation Angle.</td></tr>
 							<tr><td>Negative Rotate Key</td><td>Key used to rotate backward the object by Snap Rotation Angle.</td></tr>
+							<tr><td>Should Toggle Remover</td><td>Disable the Object Remover when Placer is enabled. Note: scripts must be on the same object.</td></tr>
 							</tbody>
 						</table>
 						</div>
 				</section>
+				<section>
+						<div class="content">
+							<header>
+								<h2>Object Remover</h2>
+							</header>
+							<p><span class="image left"><img src="images/remover.png"></span>This component allows you to remove objects from the scene.
+							  <br>Object remover is a stand alone script that hadle everything it needs to select objects and delete them.
+							  <br><b>Note: This script can be used without a placer or the UI</b>		  
+							</p>
+							<table class="alt">
+								<thead><tr><td colspan="2"><h3 class="align-center">Properties</h3></td></tr></thead>
+								<tbody>
+								<tr><td>Cam</td><td>The camera that will be used to perform the raycast. If empty Camera.main will be used.</td></tr>
+								<tr><td>Hit Layer</td><td>Layer where this script can select objects to remove.</td></tr>
+								<tr><td>Ignored Tags</td><td>List of object tags that will make an object unremovable even if is in on of the hit layers.</td></tr>
+								<tr><td>Max Hit Distance</td><td>Max distance used to search removable objects.</td></tr>
+								<tr><td>Remove In Screen Center</td><td>Select object to delete when cam center is on it, if disabled mouse position will be used.</td></tr>
+								<tr><td>Should Disable Placer</td><td>Disable Object Placer when Remover is enabled. Note: scripts must be on the same object.</td></tr>
+								<tr><td>Use Outline</td><td>Draw outline on selected object.</td></tr>
+								<tr><td>Use Custom Outline Color</td><td>Use a custom color for the outline.</td></tr>
+								<tr><td>Outline Color</td><td>Custom Color to be used in outline.</td></tr>
+								<tr><td>Toggle Key</td><td>Key used to toggle this script.</td></tr>
+								<tr><td>Delete Key</td><td>Key used to remove the selected object.</td></tr>
+								</tbody>
+							</table>
+							</div>
+					</section>
 				<section>
 					<div class="content">
 						<header>
@@ -180,12 +210,12 @@
 
 
 		<!-- Scripts -->
-		<script src="../../assets/js/jquery.min.js"></script>
-		<script src="../../assets/js/jquery.scrollex.min.js"></script>
-		<script src="../../assets/js/jquery.scrolly.min.js"></script>
-		<script src="../../assets/js/skel.min.js"></script>
-		<script src="../../assets/js/util.js"></script>
-		<script src="../../assets/js/main.js"></script>
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
 
 </body>
 

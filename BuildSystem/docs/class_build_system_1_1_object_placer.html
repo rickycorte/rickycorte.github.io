@@ -23,9 +23,9 @@
  <tr style="height: 56px;">
   <td style="padding-left: 0.5em;">
    <div id="projectname">Build System
-   &#160;<span id="projectnumber">2.0.0</span>
+   &#160;<span id="projectnumber">2.1.0</span>
    </div>
-   <div id="projectbrief">Unity 5 Build System Api reference</div>
+   <div id="projectbrief">Unity 5 Build System API reference</div>
   </td>
  </tr>
  </tbody>
@@ -90,6 +90,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="#events">Events</a> &#124;
 <a href="class_build_system_1_1_object_placer-members.html">List of all members</a>  </div>
@@ -115,10 +116,11 @@ Public Types</h2></td></tr>
 <b>screenCenter</b>
  }</td></tr>
 <tr class="separator:a51dd0b4ec0b33b5b823b6d65a7f3eeeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a57ff13c9f948df32b09fa6e86af0a8f1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a57ff13c9f948df32b09fa6e86af0a8f1"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>RotaionMode</b> { <b>snap</b>, 
-<b>facePlacer</b>
+<tr class="memitem:ae05806c537a0505a1a1f4c4b5d556c06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae05806c537a0505a1a1f4c4b5d556c06"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>RotationMode</b> { <b>snap</b>, 
+<b>facePlacer</b>, 
+<b>continuous</b>
  }</td></tr>
-<tr class="separator:a57ff13c9f948df32b09fa6e86af0a8f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:ae05806c537a0505a1a1f4c4b5d556c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -146,12 +148,45 @@ delegate void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildEvent</
 <tr class="memitem:a00500466f9a01231c5014d5ddd7d9ed8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_build_system_1_1_object_placer.html#a00500466f9a01231c5014d5ddd7d9ed8">SetPlaceMode</a> (PlaceMode pm)</td></tr>
 <tr class="memdesc:a00500466f9a01231c5014d5ddd7d9ed8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the place mode  <a href="#a00500466f9a01231c5014d5ddd7d9ed8">More...</a><br /></td></tr>
 <tr class="separator:a00500466f9a01231c5014d5ddd7d9ed8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abada83107fb1abe86642bfbceeb72887"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_build_system_1_1_object_placer.html#abada83107fb1abe86642bfbceeb72887">SetRotaionMode</a> (RotaionMode rm)</td></tr>
-<tr class="memdesc:abada83107fb1abe86642bfbceeb72887"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rotation mode  <a href="#abada83107fb1abe86642bfbceeb72887">More...</a><br /></td></tr>
-<tr class="separator:abada83107fb1abe86642bfbceeb72887"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3241f6c058273bc8554533694da2e561"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_build_system_1_1_object_placer.html#a3241f6c058273bc8554533694da2e561">SetRotaionMode</a> (RotationMode rm)</td></tr>
+<tr class="memdesc:a3241f6c058273bc8554533694da2e561"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set rotation mode  <a href="#a3241f6c058273bc8554533694da2e561">More...</a><br /></td></tr>
+<tr class="separator:a3241f6c058273bc8554533694da2e561"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8a1048f842c58b4fe260e6c0988a8234"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_build_system_1_1_object_placer.html#a8a1048f842c58b4fe260e6c0988a8234">SetSnapAngle</a> (float angle)</td></tr>
 <tr class="memdesc:a8a1048f842c58b4fe260e6c0988a8234"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the snap angle to use in object snap rotation  <a href="#a8a1048f842c58b4fe260e6c0988a8234">More...</a><br /></td></tr>
 <tr class="separator:a8a1048f842c58b4fe260e6c0988a8234"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a690835ac06b1eb44d022831b704ebc9b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a690835ac06b1eb44d022831b704ebc9b"></a>
+Camera&#160;</td><td class="memItemRight" valign="bottom"><b>cam</b></td></tr>
+<tr class="separator:a690835ac06b1eb44d022831b704ebc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1dfb382c802c19f4c081de003a0c759d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1dfb382c802c19f4c081de003a0c759d"></a>
+LayerMask&#160;</td><td class="memItemRight" valign="bottom"><b>groundLayer</b></td></tr>
+<tr class="separator:a1dfb382c802c19f4c081de003a0c759d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b8e8f3e46ee2cd4ac8f535e4f33c956"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6b8e8f3e46ee2cd4ac8f535e4f33c956"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>maxPlaceDistance</b> = 10f</td></tr>
+<tr class="separator:a6b8e8f3e46ee2cd4ac8f535e4f33c956"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a64aa6e7f34b086f110b4e0f7052e9516"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a64aa6e7f34b086f110b4e0f7052e9516"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>resetRotationAfterPlace</b> = false</td></tr>
+<tr class="separator:a64aa6e7f34b086f110b4e0f7052e9516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d07ee144d4b1639c22fbced4fe7f420"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7d07ee144d4b1639c22fbced4fe7f420"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>continuousRotationSpeed</b> = 7f</td></tr>
+<tr class="separator:a7d07ee144d4b1639c22fbced4fe7f420"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58802092614e96fb969dbc1efed6e8e4"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a58802092614e96fb969dbc1efed6e8e4"></a>
+KeyCode&#160;</td><td class="memItemRight" valign="bottom"><b>toggleKey</b> = KeyCode.E</td></tr>
+<tr class="separator:a58802092614e96fb969dbc1efed6e8e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69356e5804fcaf86c6153e45ef37c1d6"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a69356e5804fcaf86c6153e45ef37c1d6"></a>
+KeyCode&#160;</td><td class="memItemRight" valign="bottom"><b>placeKey</b> = KeyCode.Mouse0</td></tr>
+<tr class="separator:a69356e5804fcaf86c6153e45ef37c1d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a08d2d1e563482aecfcbcc67a295e1114"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a08d2d1e563482aecfcbcc67a295e1114"></a>
+KeyCode&#160;</td><td class="memItemRight" valign="bottom"><b>positiveRotateKey</b> = KeyCode.Mouse1</td></tr>
+<tr class="separator:a08d2d1e563482aecfcbcc67a295e1114"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef0e713744e376098baa59f7cf7821fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aef0e713744e376098baa59f7cf7821fc"></a>
+KeyCode&#160;</td><td class="memItemRight" valign="bottom"><b>negativeRotateKey</b> = KeyCode.None</td></tr>
+<tr class="separator:aef0e713744e376098baa59f7cf7821fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93bdacf89050d192c9033b249596e8fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a93bdacf89050d192c9033b249596e8fc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>shouldToggleRemover</b> = true</td></tr>
+<tr class="separator:a93bdacf89050d192c9033b249596e8fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -337,7 +372,7 @@ BuildEvent&#160;</td><td class="memItemRight" valign="bottom"><b>OnGhostObjectPl
 
 </div>
 </div>
-<a class="anchor" id="abada83107fb1abe86642bfbceeb72887"></a>
+<a class="anchor" id="a3241f6c058273bc8554533694da2e561"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -347,7 +382,7 @@ BuildEvent&#160;</td><td class="memItemRight" valign="bottom"><b>OnGhostObjectPl
         <tr>
           <td class="memname">void BuildSystem.ObjectPlacer.SetRotaionMode </td>
           <td>(</td>
-          <td class="paramtype">RotaionMode&#160;</td>
+          <td class="paramtype">RotationMode&#160;</td>
           <td class="paramname"><em>rm</em></td><td>)</td>
           <td></td>
         </tr>

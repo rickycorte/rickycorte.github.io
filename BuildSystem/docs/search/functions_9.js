@@ -1,5 +1,13 @@
 var searchData=
 [
-  ['toggle',['Toggle',['../class_build_system_1_1_object_placer.html#ae6f31feb2a8ae74aee96235332ef1759',1,'BuildSystem.ObjectPlacer.Toggle()'],['../class_build_system_1_1_object_placer.html#a210c6441934706894d15f4200fd1e98a',1,'BuildSystem.ObjectPlacer.Toggle(bool val)'],['../class_build_system_1_1_object_selector.html#a7b5063cc9c561be14a35f821a13191d0',1,'BuildSystem.ObjectSelector.Toggle()'],['../class_build_system_1_1_object_selector.html#aebc34cd1c2928c605a91c274b20fc9f9',1,'BuildSystem.ObjectSelector.Toggle(bool val)']]],
-  ['togglemenu',['ToggleMenu',['../class_build_system_1_1_builder_u_i.html#ad226ffe6bc6f23120ea16ef18ebb6751',1,'BuildSystem.BuilderUI.ToggleMenu()'],['../class_build_system_1_1_builder_u_i.html#af5713c381a53a562bb2c7911979b6d6a',1,'BuildSystem.BuilderUI.ToggleMenu(bool val)']]]
+  ['select',['Select',['../class_build_system_1_1_builder_object_u_i.html#ad5251eb7e5ab99686ec24500340f478e',1,'BuildSystem::BuilderObjectUI']]],
+  ['setismousenotonui',['SetIsMouseNotOnUI',['../class_build_system_1_1_object_placer.html#a8f0468f0ae67b938f03637a3a99c25a8',1,'BuildSystem::ObjectPlacer']]],
+  ['setobjecttoplace',['SetObjectToPlace',['../class_build_system_1_1_object_placer.html#a1bb5f05e4a1fefdab7c69e81aaaa775e',1,'BuildSystem::ObjectPlacer']]],
+  ['setobjecttoplaceandcreateghost',['SetObjectToPlaceAndCreateGhost',['../class_build_system_1_1_object_placer.html#ace15de705249b30ec62816964db04f05',1,'BuildSystem::ObjectPlacer']]],
+  ['setoutlinecolor',['SetOutlineColor',['../class_build_system_1_1_object_remover.html#a29cef2dedb394bb07061dca4e5735e36',1,'BuildSystem::ObjectRemover']]],
+  ['setplacemode',['SetPlaceMode',['../class_build_system_1_1_object_placer.html#a00500466f9a01231c5014d5ddd7d9ed8',1,'BuildSystem::ObjectPlacer']]],
+  ['setrotaionmode',['SetRotaionMode',['../class_build_system_1_1_object_placer.html#a3241f6c058273bc8554533694da2e561',1,'BuildSystem::ObjectPlacer']]],
+  ['setselecteditem',['SetSelectedItem',['../class_build_system_1_1_builder_u_i.html#ad461378bc942eda3ffba20a0b9d87ffb',1,'BuildSystem::BuilderUI']]],
+  ['setsnapangle',['SetSnapAngle',['../class_build_system_1_1_object_placer.html#a8a1048f842c58b4fe260e6c0988a8234',1,'BuildSystem::ObjectPlacer']]],
+  ['setup',['SetUp',['../class_build_system_1_1_builder_object_u_i.html#ae2a45d444efed34c606e2953d0452d18',1,'BuildSystem::BuilderObjectUI']]]
 ];
