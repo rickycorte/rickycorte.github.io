@@ -1,0 +1,49 @@
+
+.margin-20
+{
+    margin: 20px 20px 20px 20px;
+}
+
+.margin-40
+{
+    margin: 40px 40px 40px 40px;
+}
+
+.padding-up-30
+{
+  padding-top: 30px;
+}
+
+.hor-pad-15
+{
+    padding-left: 15px;
+    padding-left: 15px;
+}
+
+
+.parallax { 
+    background-image: url("../img/next.jpg");
+
+    height: 500px; 
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.footer-a a:link, a:visited
+{
+   color: #f8f9fa !important
+}
+
+.footer-a a:hover
+{
+    color: #868e96!important
+}
+
+.min-sz
+{
+    min-height: 500px;
+}
