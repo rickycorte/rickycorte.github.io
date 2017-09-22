@@ -20,6 +20,17 @@
     padding-left: 15px;
 }
 
+.vert-pad-15
+{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.pad-5
+{
+    padding: 5px 5px 5px 5px;
+}
+
 .next-bg
 {
     background-image: url("../img/next.jpg");
@@ -50,6 +61,12 @@ a:hover
     color: #868e96 !important;
 }
 
+a.special:hover
+{
+    background-color:#138C9F!important; 
+    color: #f8f9fa !important;
+}
+
 .min-sz
 {
     min-height: 500px;
@@ -73,11 +90,16 @@ a:hover
 
 .bg-proj1
 {
-    background-image: url("../img/p1.jpg")
+    background-image: url("../img/p1_b.jpg")
 }
 
 .img-little
 {
     max-height: 300px;
     max-width: 400px;
+}
+
+.max-wid
+{
+ max-width: 100%;   
 }
