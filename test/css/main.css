@@ -42,12 +42,12 @@
 
 a:link, a:visited
 {
-   color: #f8f9fa;
+   color: #f8f9fa !important;
 }
 
 a:hover
 {
-    color: #868e96;
+    color: #868e96 !important;
 }
 
 .min-sz
@@ -69,4 +69,15 @@ a:hover
 .bg-darker
 {
     background-color: #2F363B!important;
+}
+
+.bg-proj1
+{
+    background-image: url("../img/p1.jpg")
+}
+
+.img-little
+{
+    max-height: 300px;
+    max-width: 400px;
 }
