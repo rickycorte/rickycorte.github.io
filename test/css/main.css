@@ -40,14 +40,14 @@
     
 }
 
-.footer-a a:link, a:visited
+a:link, a:visited
 {
-   color: #f8f9fa !important;
+   color: #f8f9fa;
 }
 
-a.footer-a:hover
+a:hover
 {
-    color: #868e96!important;
+    color: #868e96;
 }
 
 .min-sz
@@ -57,11 +57,16 @@ a.footer-a:hover
 
 .selectable div:hover
 {
-    background-color: #868e96!important;
+    background-color: #868e96;
 }
 
 .el-pad
 {
     padding-bottom: 25px;
     padding-top: 25px;
+}
+
+.bg-darker
+{
+    background-color: #2F363B!important;
 }
