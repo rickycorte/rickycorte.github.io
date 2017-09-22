@@ -20,10 +20,17 @@
     padding-left: 15px;
 }
 
+.next-bg
+{
+    background-image: url("../img/next.jpg");
+}
+
+.top-bg
+{
+    background-image: url("../img/top.jpg")
+}
 
 .parallax { 
-    background-image: url("../img/next.jpg");
-
     height: 500px; 
 
     background-attachment: fixed;
@@ -35,15 +42,26 @@
 
 .footer-a a:link, a:visited
 {
-   color: #f8f9fa !important
+   color: #f8f9fa !important;
 }
 
-.footer-a a:hover
+a.footer-a:hover
 {
-    color: #868e96!important
+    color: #868e96!important;
 }
 
 .min-sz
 {
     min-height: 500px;
+}
+
+.selectable div:hover
+{
+    background-color: #868e96!important;
+}
+
+.el-pad
+{
+    padding-bottom: 25px;
+    padding-top: 25px;
 }
