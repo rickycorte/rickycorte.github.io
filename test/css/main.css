@@ -9,6 +9,11 @@
     margin: 40px 40px 40px 40px;
 }
 
+.margin-up-10
+{
+    margin-top: 10px;
+}
+
 .padding-up-30
 {
   padding-top: 30px;
@@ -26,9 +31,9 @@
     padding-bottom: 15px;
 }
 
-.pad-5
+.pad-10
 {
-    padding: 5px 5px 5px 5px;
+    padding: 10px 10px 10px 10px;
 }
 
 .next-bg
@@ -104,4 +109,9 @@ a.special:hover
 .max-wid
 {
  max-width: 100%;   
+}
+
+.p-min-h
+{
+    min-height: 80px;
 }
