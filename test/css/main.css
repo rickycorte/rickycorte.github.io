@@ -51,7 +51,7 @@
     
 }
 
-a:link, a:visited
+a:link, a:visited, a:active
 {
    color: #f8f9fa !important;
 }
