@@ -100,6 +100,38 @@ a.special:hover
     background-image: url("../img/p1_b.jpg")
 }
 
+
+.bg-builds
+{
+    background-image: url("../img/buildsystem_b.jpg")
+}
+
+.bg-hellball
+{
+    background-image: url("../img/hellball_b.jpg")
+}
+
+.bg-htbuilder
+{
+    background-image: url("../img/htbuilder_b.jpg")
+}
+
+.bg-kirai
+{
+    background-image: url("../img/kiraicolors_b.jpg")
+}
+
+.bg-photot
+{
+    background-image: url("../img/phototemplate_b.jpg")
+}
+
+.bg-useless
+{
+    background-image: url("../img/uselessmeter_b.jpg")
+}
+
+
 .img-little
 {
     max-height: 300px;

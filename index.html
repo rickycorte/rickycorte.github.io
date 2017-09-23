@@ -2,176 +2,191 @@
 <html>
 
 <head>
-    <title>RickyCorte</title>
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Import materialize.css-->
-    <link type="text/css" rel="stylesheet" href="materialize/css/materialize.min.css" media="screen,projection" />
-
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="b/css/bootstrap.min.css">
+  <link rel="stylesheet" href="fa/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <title>RickyCorte</title>
 </head>
 
-<body>
+<body class="bg-dark text-light">
+  <nav class="navbar fixed-top navbar-light navbar-dark bg-dark bg-darker" id="nav_top">
+    <a class="navbar-brand" href="index.html">RickyCorte</a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#home" id="home_btn">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#projects" id="proj_btn">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#next" id="next_btn">What's next</a>
+      </li>
+    </ul>
+  </nav>
 
-    <div class="row">
-         <!--Useless meter-->
-        <div class="col l6 s12">
-            <div class="card sticky-action hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/uselessmeter.jpg">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Useless Meter<i class="material-icons right">more_vert</i></span>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Useless Meter<i class="material-icons right">close</i></span>
-                    <p>Mesure how much you are useless with this simple game! Can you be the most useless person in the world?</p>
-                </div>
-                <div class="card-action">
-                    <a class="waves-effect btn-flat purple-text" href="https://play.google.com/store/apps/details?id=it.RickyCorte.UselessMeter">Play Store</a>
-                </div>
-            </div>
+  <div class="container-fluid">
+
+    <div id="home" class="row min-sz parallax top-bg">
+      <div class="col-12 align-self-center text-center">
+        <h1 id="main_title"></h1>
+      </div>
+    </div>
+
+    <!-- progetto finiti -->
+    <div class="row justify-content-center bg-success" id="projects">
+
+      <div class="col-12 text-center">
+        <h1 class="margin-40">Projects</h1>
+      </div>
+    </div>
+
+    <div class="min-sz">
+
+    <div class="row padding-up-30">
+      <div class="col-12 col-md-6 text-center text-lg-left el-pad">
+        <div class="row">
+          <div class="col-12 col-lg-2">
+              <i class="fa fa-building fa-5x" aria-hidden="true"></i>
+          </div>
+          <div class="col-12 col-lg-10">
+              <h1>Build System</h1>
+              <p class="p-min-h">The best free and complete solution to place objects in your Unity 5 game. 
+                You will fall in love with the simplicity and automation included in this asset.</p>
+          </div>
+          <div class="col-12 text-center selectable margin-up-10">
+              <a href="buildsystem.html" class="bg-info rounded pad-10 special">Discover more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
         </div>
+      </div>
 
-        <!--Build System-->
-        <div class="col l6 s12">
-            <div class="card sticky-action hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/buildsystem.jpg">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Build System<i class="material-icons right">more_vert</i></span>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Build System<i class="material-icons right">close</i></span>
-                    <p>The best free and complete solution for placing objects in your Unity 5 game, you will fall in love with
-                        the simplicity and automation included in this asset.</p>
-                </div>
-                <div class="card-action">
-                    <a class="waves-effect btn-flat purple-text" href="https://www.assetstore.unity3d.com/en/#!/content/84935">Asset Store</a>
-                    <a class="waves-effect btn-flat purple-text" href="https://github.com/rickycorte/Unity5-Build-System">GitHub</a>
-                    <a class="waves-effect btn-flat purple-text" href="BuildSystem/docs/index.html">Api Reference</a>
-                    <a class="waves-effect btn-flat purple-text" href="BuildSystem/manual/index.html">Manual</a>
-                </div>
-            </div>
+      <div class="col-12 col-md-6 text-center text-lg-left el-pad">
+        <div class="row">
+          <div class="col-12 col-lg-2">
+              <i class="fa fa-picture-o fa-5x" aria-hidden="true"></i>
+          </div>
+          <div class="col-12 col-lg-10">
+              <h1>Photographer Template</h1>
+              <p class="p-min-h">Free and open source template for your photographer site. The template is built with Boostrap, HTML 5 and CSS 3 and it's fully responsive!</p>
+          </div>
+          <div class="col-12 text-center margin-up-10">
+              <a href="phototemplate.html" class="bg-info rounded pad-10 special">Discover more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
         </div>
+      </div>
+    </div>
 
-        <!--Photographer Template-->
-        <div class="col l6 s12">
-            <div class="card sticky-action hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/phototemplate.jpg">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Photographer Template<i class="material-icons right">more_vert</i></span>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Photographer Template<i class="material-icons right">close</i></span>
-                    <p>Free and open source template for your photographer site. The template is built with Boostrap, HTML 5
-                        and CSS 3 and it's fully responsive!</p>
-                </div>
-                <div class="card-action">
-                    <a class="waves-effect btn-flat purple-text" href="https://rickycorte.github.io/Photographer-SiteTemplate/">Live Demo</a>
-                    <a class="waves-effect btn-flat purple-text" href="https://github.com/rickycorte/Photographer-SiteTemplate">GitHub</a>
-                </div>
+    <div class="row padding-up-30">
+        <div class="col-12 col-md-6 text-center text-lg-left el-pad">
+          <div class="row">
+            <div class="col-12 col-lg-2">
+                <i class="fa fa-dot-circle-o fa-5x" aria-hidden="true"></i>
             </div>
-        </div>
-
-        <!--HellBall-->
-        <div class="col l6 s12">
-            <div class="card sticky-action hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/hellball.jpg">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">HellBall<i class="material-icons right">more_vert</i></span>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">HellBall<i class="material-icons right">close</i></span>
-                    <p>A really simple and futuristic remake of Pong made with a simple and awesome neon style. Enjoy epic fights
-                        with incredible skills and custumization!</p>
-                </div>
-                <div class="card-action">
-                    <a class="waves-effect btn-flat purple-text" href="https://play.google.com/store/apps/details?id=com.IgnisTenebrisStudio.Hellball">Play Store</a>
-                </div>
+            <div class="col-12 col-lg-10">
+                <h1>HellBall</h1>
+                <p class="p-min-h">A really simple and futuristic remake of Pong made with a simple and awesome neon style. Enjoy epic fights with incredible skills and custumization!</p>
             </div>
-        </div>
-
-        <!--Kirai Colors-->
-        <div class="col l6 s12">
-            <div class="card sticky-action hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/kiraicolors.jpg">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Kirai Colors<i class="material-icons right">more_vert</i></span>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Kirai Colors<i class="material-icons right">close</i></span>
-                    <p>Jump in a nine-squared world of colors! Challenge your-self with over 50 colors in a simple and fast
-                        game. Can you spot all the different colors?</p>
-                </div>
-                <div class="card-action">
-                    <a class="waves-effect btn-flat purple-text" href="https://play.google.com/store/apps/details?id=com.RickyIT.Tap_That">Play Store</a>
-                    <a class="waves-effect btn-flat purple-text" href="https://www.microsoft.com/it-it/store/games/kirai-colors/9nblggh58zg1">Windows Store</a>
-                    <a class="waves-effect btn-flat purple-text" href="https://github.com/rickycorte/Unity3D-Kirai_Colors">GitHub</a>
-                </div>
+            <div class="col-12 text-center margin-up-10">
+                <a href="hellball.html" class="bg-info rounded pad-10 special">Discover more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
             </div>
+          </div>
         </div>
-
-        <!--Html Table Builder-->
-        <div class="col l6 s12">
-            <div class="card sticky-action hoverable">
-                <div class="card-image waves-effect waves-block waves-light">
-                    <img class="activator" src="images/htbuilder.jpg">
-                </div>
-                <div class="card-content">
-                    <span class="card-title activator grey-text text-darken-4">Html Table Builder<i class="material-icons right">more_vert</i></span>
-                </div>
-                <div class="card-reveal">
-                    <span class="card-title grey-text text-darken-4">Html Table Builder<i class="material-icons right">close</i></span>
-                    <p>Rebuild, edit, clean your HTML 5 table with a few commands. You can easly move data from an old table
-                        to a new one in few seconds.</p>
-                </div>
-                <div class="card-action">
-                    <a class="waves-effect btn-flat purple-text" href="https://github.com/rickycorte/Html_Table_Editor">GitHub</a>
-                </div>
+  
+        <div class="col-12 col-md-6 text-center text-lg-left el-pad">
+          <div class="row">
+            <div class="col-12 col-lg-2">
+                <i class="fa fa-play-circle-o fa-5x" aria-hidden="true"></i>
             </div>
+            <div class="col-12 col-lg-10">
+                <h1>Useless Meter</h1>
+                <p class="p-min-h">Mesure how much you are useless with this simple game! Can you be the most useless person in the world?</p>
+            </div>
+            <div class="col-12 text-center margin-up-10">
+                <a href="uselessmeter.html" class="bg-info rounded pad-10 special">Discover more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+            </div>
+          </div>
         </div>
+      </div>
 
+
+    <div class="row padding-up-30">
+      <div class="col-12 col-md-6 text-center text-lg-left el-pad">
+        <div class="row">
+          <div class="col-12 col-lg-2">
+              <i class="fa fa-eye fa-5x" aria-hidden="true"></i>
+          </div>
+          <div class="col-12 col-lg-10">
+              <h1>Kirai Colors</h1>
+              <p class="p-min-h">Jump in a nine-squared world of colors! Challenge your-self with over 50 colors in a simple and fast game. Can you spot all the different colors?</p>
+          </div>
+          <div class="col-12 text-center margin-up-10">
+              <a href="kiraicolors.html" class="bg-info rounded pad-10 special">Discover more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 text-center text-lg-left el-pad">
+        <div class="row">
+          <div class="col-12 col-lg-2">
+              <i class="fa fa-table fa-5x" aria-hidden="true"></i>
+          </div>
+          <div class="col-12 col-lg-10">
+              <h1>Html Table Builder</h1>
+              <p class="p-min-h">Rebuild, edit, clean your HTML 5 table with a few commands. You can easly move data from an old table to a new one in few seconds.</p>
+          </div>
+          <div class="col-12 text-center margin-up-10">
+              <a href="htbuilder.html" class="bg-info rounded pad-10 special">Discover more <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
     </div>
 
 
-    <footer class="page-footer purple darken-2">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text">Favourite quote:</h5>
-                    <p class="grey-text text-lighten-4">Three things you can't recover: the word after it's said, the moment after it's missed, and the time after it's gone.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Contacts:</h5>
-                    <ul>
-                        <li><a class="grey-text text-lighten-3" href="https://twitter.com/rickycortef">Twitter</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://github.com/rickycorte">GitHub</a></li>
-                        <li><a class="grey-text text-lighten-3" href="https://www.youtube.com/channel/UCkH7kbKpEcjCb8ESpWvI4ew">Youtube</a></li>
-                        <li><a class="grey-text text-lighten-3" href="mailto:rickycortef@gmail.com">Email</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright purple darken-3">
-            <div class="container">
-                © 2017 RickyCorte
-            </div>
-        </div>
-    </footer>
+    </div>
 
+    <!-- progetto futuro -->
+    <div class="row justify-content-center bg-warning" id="next">
+      <div class="col-12 text-center">
+        <h1 class="margin-40">What's next?</h1>
+      </div>
+    </div>
+    <div class="row parallax next-bg">
+      <div class="col-12 text-center padding-up-30">
+        <h1>Nanao-Chan Bot</h1>
+        <p><b>The biggest project I've started.</b><br>
+          Nanao is a chat bot that can talk to users, share informations abount japanese animes, send pictures and more.<br>
+          She is powered by a full C++ backend with the main aim to bring super fast answers to users.<br>
+          Nanao at the moment is still in a closed Alpha state and has over 50 triggers.<br>
+          Her average processing time of 1ms/request plus 200ms of tsl/ssl encrypted transport to chat platforms.<br><br>
+          <b>This is not enouth, I want more!</b><br>
+          In the future Nanao will be even more powerful!
+        </p>
+      </div>
+    </div>
+  </div>
 
-    <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="materialize/js/materialize.min.js"></script>
+  <footer class="footer margin-40">
+    <div class="container">
+      <div class="row justify-content-between">
+        <div class="col-12 col-md-12 col-lg-3 col-xl-3 align-self-center text-center text-lg-left">
+          <span class="text-muted">&copy; 2017 RickyCorte</span>
+        </div>
+        <div class="col-12 .col-md-12 col-lg-4 col-xl-3 text-center text-lg-right">
+          <a href="https://github.com/rickycorte"><i class="fa fa-github fa-3x hor-pad-15" aria-hidden="true"></i></a>
+          <a href="https://twitter.com/rickycortef"><i class="fa fa-twitter fa-3x hor-pad-15" aria-hidden="true"></i></a>
+          <a href="mailto:rickycortef@gmail.com"><i class="fa fa-envelope-o fa-3x hor-pad-15" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+  <script src="b/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js"></script>
+  <script src="js/main.js"></script>
+
 </body>
 
 </html>

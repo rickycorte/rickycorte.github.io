@@ -19,7 +19,7 @@ $('#main_title').typeIt({
 })
 .tiPause(1000)
 .tiDelete()
-.tiType("Site title");
+.tiType("Scroll down to see my projects!");
 
 $('#home_btn').click(function(){ scrollTo('#home');});
 $('#proj_btn').click(function(){ scrollTo('#projects');});
