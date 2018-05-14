@@ -1,149 +1,32 @@
-
-.margin-20
+body
 {
-    margin: 20px 20px 20px 20px;
+  height: 100vh !important;
 }
 
-.margin-40
+.full
 {
-    margin: 40px 40px 40px 40px;
+  height: 96% !important;
 }
 
-.margin-up-10
+.vertical
 {
-    margin-top: 10px;
+  margin-top: 48vh;
 }
 
-.padding-up-30
+a
 {
-  padding-top: 30px;
+ color: #6c757d;
 }
 
-.hor-pad-15
+a:hover, a:visited, a:active
 {
-    padding-left: 15px;
-    padding-left: 15px;
+    color: hotpink;
 }
 
-.vert-pad-15
-{
-    padding-top: 15px;
-    padding-bottom: 15px;
-}
-
-.pad-10
-{
-    padding: 10px 10px 10px 10px;
-}
-
-.next-bg
-{
-    background-image: url("../img/next.jpg");
-}
-
-.top-bg
-{
-    background-image: url("../img/top.jpg")
-}
-
-.parallax { 
-    height: 500px; 
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    
-}
-
-a:link, a:visited, a:active
-{
-   color: #f8f9fa !important;
-}
-
-a:hover
-{
-    color: #868e96 !important;
-}
-
-a.special:hover
-{
-    background-color:#138C9F!important; 
-    color: #f8f9fa !important;
-}
-
-.min-sz
-{
-    min-height: 500px;
-}
-
-.selectable div:hover
-{
-    background-color: #868e96;
-}
-
-.el-pad
-{
-    padding-bottom: 25px;
-    padding-top: 25px;
-}
-
-.bg-darker
-{
-    background-color: #2F363B!important;
-}
-
-.bg-proj1
-{
-    background-image: url("../img/p1_b.jpg")
-}
-
-
-.bg-builds
-{
-    background-image: url("../img/buildsystem_b.jpg")
-}
-
-.bg-hellball
-{
-    background-image: url("../img/hellball_b.jpg")
-}
-
-.bg-htbuilder
-{
-    background-image: url("../img/htbuilder_b.jpg")
-}
-
-.bg-kirai
-{
-    background-image: url("../img/kiraicolors_b.jpg")
-}
-
-.bg-photot
-{
-    background-image: url("../img/phototemplate_b.jpg")
-}
-
-.bg-useless
-{
-    background-image: url("../img/uselessmeter_b.jpg")
-}
-
-
-.img-little
-{
-    max-height: 300px;
-    max-width: 400px;
-}
-
-.max-wid
-{
- max-width: 100%;   
-}
-
-.p-min-h
-{
-    min-height: 80px;
+#particles canvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    display: block;
 }
