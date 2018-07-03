@@ -1,17 +1,4 @@
-body
-{
-  height: 100vh !important;
-}
 
-.full
-{
-  height: 96% !important;
-}
-
-.vertical
-{
-  margin-top: 44vh;
-}
 
 a
 {
@@ -24,9 +11,89 @@ a:hover, a:visited, a:active
 }
 
 #particles canvas{
-    position: absolute;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    z-index: -100;
     display: block;
+}
+
+.white-bg
+{
+  background-color: white;
+}
+
+.fixed-top
+{
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  z-index: -99;
+}
+
+.footer
+{
+  position: fixed;
+  bottom: 20px;
+  right: 0px;
+  left: 0px;
+  z-index: -99;
+}
+
+.top-title
+{
+  position: absolute;
+  top: 50vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.scrollable-box
+{
+  margin-top: 100vh;
+  min-height: 100vh;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 70px;
+}
+
+.padding-top-25
+{
+  padding-top: 25px;
+}
+
+.padding-bot-25
+{
+  padding-bottom: 25px;
+}
+
+.fill-screen
+{
+  min-height: 100vh;
+}
+
+.img-responsive {
+  display: inline-block;
+}
+
+.invisible-separator
+{
+  opacity: 0;
+  min-height: 250px;
+  width: 100%;
+}
+
+.scrolled { 
+  opacity: 0;
+}
+
+.no-padding-hor
+{
+  padding-right: 0px;
+  padding-left: 0px;
 }

@@ -1,15 +1,8 @@
-/* -----------------------------------------------
-/* How to use? : Check the GitHub README
-/* ----------------------------------------------- */
 
-/* To load a config file (particles.json) you need to host this demo (MAMP/WAMP/local)... */
-/*
-particlesJS.load('particles-js', 'particles.json', function() {
-  console.log('particles.js loaded - callback');
+$(document).scroll(function(){
+  $('.top-title').toggleClass('scrolled', $(this).scrollTop() > $(window).height());
 });
-*/
 
-/* Otherwise just put the config content (json): */
 
 particlesJS('particles',
 
