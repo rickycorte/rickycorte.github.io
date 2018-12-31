@@ -15,10 +15,10 @@ a:hover, a:visited, a:active
     top: 0px;
     right: 0px;
     left: 0px;
-    width: 100%;
-    height: 100%;
+    max-height: 100vh !important;
     z-index: -100;
-    display: block;
+    display: inline;
+    overflow: hidden;
 }
 
 .text-muted-pink
@@ -43,6 +43,9 @@ a:hover, a:visited, a:active
   right: 0px;
   left: 0px;
   z-index: -99;
+  bottom: 0px;
+  max-width: 99vw;
+  overflow: hidden;
 }
 
 .footer
@@ -54,14 +57,11 @@ a:hover, a:visited, a:active
 
 .top-title
 {
-  position: fixed;
-  bottom: 530px;
-  width: 440px;
+  width: 50vw;
+  margin-left: 25vw;
   height: 60px;
-  display: block;
+  margin-top: 25px;
   text-align: center;
-  margin-left: -220px;
-  left: 50%;
   border: 3px solid white;
   border-radius: 100px;
 }
@@ -70,9 +70,8 @@ a:hover, a:visited, a:active
 {
   margin-top: 100vh;
   min-height: 100vh;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
 .padding-top-25
@@ -113,15 +112,33 @@ a:hover, a:visited, a:active
 
 .fixed-head-img
 {
-  max-width: 480px;
-  position: fixed;
-  bottom: 0px;
-  left: 50%;
+  max-width: 50vw;
   
-  margin-left: -240px;
 }
 
 .alert
 {
   border-radius: 0 !important;  
+}
+
+.head-fillh
+{
+  height: 100%;
+}
+
+.fixed-head-img
+{
+  width: 50vw;
+  margin-left: 25vw;
+  position: relative;
+  bottom: 0px;
+}
+
+.abs-head
+{
+  position: absolute;
+  bottom: 0px;
+  max-height: 100vh;
+
+  overflow: hidden;
 }
