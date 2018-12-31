@@ -31,6 +31,11 @@ a:hover, a:visited, a:active
   background-color: white;
 }
 
+.dark-bg
+{
+  background-color: #1f1e1e;  
+}
+
 .fixed-top
 {
   position: fixed;
@@ -44,15 +49,21 @@ a:hover, a:visited, a:active
 {
   padding-top: 20px;
   padding-bottom: 20px;
-  background-color: #343a40;
+  background-color: #1f1e1e;
 }
 
 .top-title
 {
-  position: absolute;
-  top: 50vh;
-  width: 100vw;
+  position: fixed;
+  bottom: 530px;
+  width: 440px;
+  height: 60px;
+  display: block;
   text-align: center;
+  margin-left: -220px;
+  left: 50%;
+  border: 3px solid white;
+  border-radius: 100px;
 }
 
 .scrollable-box
@@ -100,28 +111,12 @@ a:hover, a:visited, a:active
   padding-left: 0px;
 }
 
-.overlay
+.fixed-head-img
 {
+  max-width: 480px;
   position: fixed;
-  top: 0px;
-  right: 0px;
-  left: 0px;
   bottom: 0px;
-  width: 100%;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.overlay-off
-{
-  z-index: -1000;
-  opacity: 0;
-}
-
-.overlay-img
-{
-  position: relative;
-  top: 50%;
-  height: 100vh;
-  margin-top: -50vh;
+  left: 50%;
+  
+  margin-left: -240px;
 }
