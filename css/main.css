@@ -21,7 +21,7 @@ a:hover, a:visited, a:active
     display: block;
 }
 
-.text-muted
+.text-muted-pink
 {
   color: hotpink !important;
 }
@@ -119,4 +119,9 @@ a:hover, a:visited, a:active
   left: 50%;
   
   margin-left: -240px;
+}
+
+.alert
+{
+  border-radius: 0 !important;  
 }

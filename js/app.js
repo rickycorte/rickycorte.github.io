@@ -3,18 +3,6 @@ $(document).scroll(function(){
   $('.top-title').toggleClass('scrolled', $(this).scrollTop() > $(window).height());
 });
 
-/*
-$('#waifu').on('click touchstart',function(){
-  $('.overlay').toggleClass('overlay-off')
-  $('body').css({'overflow':'hidden'});
-})
-
-$('#close').on('click touchstart',function(){
-  $('.overlay').toggleClass('overlay-off')
-  $('body').css({'overflow':'visible'});
-})
-*/
-
 particlesJS('particles',
 
   {
