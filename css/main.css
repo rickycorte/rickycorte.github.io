@@ -1,4 +1,7 @@
 
+html, body {
+  overflow-x: hidden;
+}
 
 a
 {
@@ -57,10 +60,11 @@ a:hover, a:visited, a:active
 
 .top-title
 {
-  width: 50vw;
-  margin-left: 25vw;
-  height: 60px;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  min-height: 60px;
   margin-top: 25px;
+  margin-bottom: 25px;
   text-align: center;
   border: 3px solid white;
   border-radius: 100px;
@@ -110,20 +114,9 @@ a:hover, a:visited, a:active
   padding-left: 0px;
 }
 
-.fixed-head-img
-{
-  max-width: 50vw;
-  
-}
-
 .alert
 {
   border-radius: 0 !important;  
-}
-
-.head-fillh
-{
-  height: 100%;
 }
 
 .fixed-head-img
