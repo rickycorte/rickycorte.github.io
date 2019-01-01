@@ -127,6 +127,21 @@ a:hover, a:visited, a:active
   bottom: 0px;
 }
 
+@media (max-width:1000px)
+{
+  .fixed-head-img
+  {
+    width: 85vw;
+    margin-left: 7vw;
+  }
+
+  .top-title
+  {
+    margin-left: 5vw;
+    margin-right: 5vw;
+    }
+}
+
 .abs-head
 {
   position: absolute;
