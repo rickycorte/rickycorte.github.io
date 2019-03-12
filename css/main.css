@@ -3,150 +3,50 @@ html, body {
   overflow-x: hidden;
 }
 
-a
+.top-row
 {
- color: hotpink;
+  background-color: #ee4266;
 }
 
-a:hover, a:visited, a:active
+.row
 {
-    color: #ff87c3;
+  min-height: 50vh;
 }
 
-#particles canvas{
-    position: fixed;
-    top: 0px;
-    right: 0px;
-    left: 0px;
-    max-height: 100vh !important;
-    z-index: -100;
-    display: inline;
-    overflow: hidden;
+.resp-img
+{
+  height: 100%;
+  width: auto;
+  display:block;
+  margin:auto;
 }
 
-.text-muted-pink
+.fill-parent
 {
-  color: hotpink !important;
+  height: 100%;
+  width: 100%;  
 }
 
-.white-bg
+.flex-center
 {
-  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
-.dark-bg
+.white-alt-bg
 {
-  background-color: #1f1e1e;  
+  background-color: #fafafa;
 }
 
-.fixed-top
+.hide-overflow
 {
-  position: fixed;
-  top: 0px;
-  right: 0px;
-  left: 0px;
-  z-index: -99;
-  bottom: 0px;
-  max-width: 99vw;
   overflow: hidden;
 }
 
-.footer
+.text-margin
 {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: #1f1e1e;
-}
-
-.top-title
-{
-  margin-left: 20vw;
-  margin-right: 20vw;
-  min-height: 60px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  text-align: center;
-  border: 3px solid white;
-  border-radius: 100px;
-}
-
-.scrollable-box
-{
-  margin-top: 100vh;
-  min-height: 100vh;
-  margin-left: 0px;
-  margin-right: 0px;
-}
-
-.padding-top-25
-{
-  padding-top: 25px;
-}
-
-.padding-bot-25
-{
-  padding-bottom: 25px;
-}
-
-.fill-screen
-{
-  min-height: 100vh;
-}
-
-.img-responsive {
-  display: inline-block;
-}
-
-.invisible-separator
-{
-  opacity: 0;
-  min-height: 250px;
-  width: 100%;
-}
-
-.scrolled { 
-  opacity: 0;
-}
-
-.no-padding-hor
-{
-  padding-right: 0px;
-  padding-left: 0px;
-}
-
-.alert
-{
-  border-radius: 0 !important;  
-}
-
-.fixed-head-img
-{
-  width: 50vw;
-  margin-left: 25vw;
-  position: relative;
-  bottom: 0px;
-}
-
-@media (max-width:1000px)
-{
-  .fixed-head-img
-  {
-    width: 85vw;
-    margin-left: 7vw;
-  }
-
-  .top-title
-  {
-    margin-left: 5vw;
-    margin-right: 5vw;
-    }
-}
-
-.abs-head
-{
-  position: absolute;
-  bottom: 0px;
-  max-height: 100vh;
-
-  overflow: hidden;
+  margin-right: 15px;
+  margin-left: 15px;
 }
