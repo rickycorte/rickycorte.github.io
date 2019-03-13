@@ -80,3 +80,26 @@ html, body {
   min-height: 150px;
   background-color: #2c2c2d;
 }
+
+.link-r a, .link-r a:visited, .link-r a:link
+{
+  color: #ee4266;
+}
+
+.link-r a:hover
+{
+  color: #ce3d5c;
+}
+
+.btn-danger
+{
+  background: #ee4266;
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active, .open > .dropdown-toggle.btn-danger {
+  background: #ce3d5c;
+}
+
+.btn-danger:active, .btn-danger.active {
+  background: #ce3d5c;
+}
