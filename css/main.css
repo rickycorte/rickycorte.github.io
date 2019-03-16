@@ -79,6 +79,7 @@ html, body {
 {
   min-height: 150px;
   background-color: #2c2c2d;
+  padding-top: 5px;
 }
 
 .link-r a, .link-r a:visited, .link-r a:link
