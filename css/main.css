@@ -64,6 +64,11 @@ html, body {
   width: 100%;
 }
 
+.expand-y
+{
+  min-height: 100%;
+}
+
 .no-padding
 {
   padding: 0px;
@@ -75,16 +80,26 @@ html, body {
   padding-bottom: 20px;
 }
 
+.top-padding-20
+{
+  padding-top: 20px;
+}
+
+.right-padding-5
+{
+  padding-right: 5px;
+}
+
 .row-footer
 {
-  min-height: 150px;
-  background-color: #2c2c2d;
-  padding-top: 5px;
+  min-height: 130px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .link-r a, .link-r a:visited, .link-r a:link
 {
-  color: #ee4266;
+  color: #888;
 }
 
 .link-r a:hover
@@ -103,4 +118,41 @@ html, body {
 
 .btn-danger:active, .btn-danger.active {
   background: #ce3d5c;
+}
+
+.card
+{
+  border-radius: 0px;
+  border: none;
+}
+
+.card-footer
+{
+  background-color: white;
+}
+
+.card .card-img-top
+{
+ border-radius: 0px;
+}
+
+.card .btn, .card .btn:active
+{
+  background: white;
+  color: #2c2c2d;
+  border-radius: 0px;
+  border-color: gainsboro; 
+}
+
+.card .btn:hover, .card .btn:focus
+{
+  color: #ce3d5c;
+  border-color: #ce3d5c; 
+}
+
+@media (min-width: 576px) and (max-width: 767.98px)
+{
+  .card {
+    flex: 0 0 calc(50% - 30px) !important;
+  }
 }

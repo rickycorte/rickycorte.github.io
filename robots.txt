@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /BuildSystem
+
+Sitemap: https://rickycorte.com/sitemap.xml
