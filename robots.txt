@@ -1,5 +1,5 @@
 User-agent: *
 Disallow: /BuildSystem
-Disallow: /agreements
+Disallow: /privacy
 
 Sitemap: https://rickycorte.com/sitemap.xml
