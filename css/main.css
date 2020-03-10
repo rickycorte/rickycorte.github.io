@@ -1,12 +1,30 @@
 
+body {
+  background-color: #121212;
+  color: rgba(255, 255, 255, 0.87);
+}
+
+
+
+p {
+  color: rgba(255, 255, 255, 0.60);
+}
+
 html, body {
   overflow-x: hidden;
 }
 
+
 .top-row
 {
-  background-color: #ee4266;
+  background-image: url("../img/cover.webp"), url("../img/cover.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center; 
 }
+
+.top-row h1{ color: white;}
+.top-row p{ color: white;}
 
 .row-f
 {
@@ -16,6 +34,7 @@ html, body {
 .resp-img
 {
   height: 100%;
+  max-height: 500px;
   width: auto;
   display:block;
   margin:auto;
@@ -93,8 +112,10 @@ html, body {
 .row-footer
 {
   min-height: 130px;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 .link-r a, .link-r a:visited, .link-r a:link
@@ -123,12 +144,15 @@ html, body {
 .card
 {
   border-radius: 0px;
+  background-color: #222222;
   border: none;
 }
 
 .card-footer
 {
-  background-color: white;
+  background-color: #222222;
+  border-top: 0px;
+  padding-bottom: 15px;
 }
 
 .card .card-img-top
@@ -138,8 +162,9 @@ html, body {
 
 .card .btn, .card .btn:active
 {
-  background: white;
-  color: #2c2c2d;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.87);;
+  background-color: rgba(0, 0, 0, 0);
   border-radius: 0px;
   border-color: gainsboro; 
 }
@@ -150,9 +175,34 @@ html, body {
   border-color: #ce3d5c; 
 }
 
-@media (min-width: 576px) and (max-width: 767.98px)
+@media (min-width: 576px) and (max-width: 1024.00px)
 {
   .card {
     flex: 0 0 calc(50% - 30px) !important;
   }
 }
+
+.margin-15-md{
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+@media (max-width: 576px) 
+{
+  .margin-15-md{
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  
+}
+
+
+.no-margin{
+  margin: 0px 0px 0px 0px;
+}
+
+.card-2 {
+  width: 100%;
+  background-color: #222222;
+}
+
