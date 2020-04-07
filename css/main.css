@@ -19,3 +19,8 @@ body {
   justify-content: center;
 
 }
+
+.hero-foot, .hero-head {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
